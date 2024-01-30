@@ -17,17 +17,17 @@ const container = document.getElementById("container");
 // instantiate analyzer
 const audioMotion = new AudioMotionAnalyzer(container, {
   source: audioEl,
-  mode: 10,
+  mode: 8,
   channelLayout: "dual-combined",
   fillAlpha: 0.3,
   fsElement: container,
   frequencyScale: "bark",
-  gradientLeft: "steelblue",
+  gradientLeft: "rainbow",
   gradientRight: "orangered",
   linearAmplitude: true,
   linearBoost: 1.8,
   lineWidth: 1.5,
-  showPeaks: false,
+  showPeaks: true,
   outlineBars: true,
   weightingFilter: "D"
 });
